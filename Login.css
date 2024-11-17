@@ -1,0 +1,144 @@
+:root{
+    --gradient:linear-gradient(45deg, rgb(125, 180, 125), rgb(10, 10, 49));
+    --gradient1:linear-gradient(-45deg, rgb(125, 180, 125), rgb(10, 10, 49));
+    /* --gradient:linear-gradient(45deg, rgb(157, 157, 197), rgb(9, 9, 213)); */
+    /* --gradient1:linear-gradient(-45deg, rgb(157, 157, 197), rgb(9, 9, 213)); */
+    /* --green: rgb(142, 211, 142); */
+    --green: rgb(26, 209, 209);
+    --box-shadow:-2px 3px 5px var(--green) inset, 3px -2px 5px var(--green);
+    --text-shadow:-2px 2px 4px rgb(10, 10, 49), 2px -2px 4px rgb(10, 10, 49);
+}
+
+.Font{
+    text-align: center;
+    font-size: large;
+    font-weight: normal;
+    font-family: monospace;
+    background-image: var(--gradient);
+    border: transparent;
+    border-radius: 5px;
+}
+
+body{
+    display: grid;
+    grid-template-rows:0.5fr 9fr 0.5fr;
+    height: 100vh;
+    margin: 0px;
+}
+
+header, footer{
+    background-image: var(--gradient);
+    display: flex;
+    justify-content: center;
+    box-shadow:-4px 4px 5px var(--green), 4px -4px 5px var(--green);
+    z-index: -1;
+}
+
+nav{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-align: center;
+    width: 70px;
+    background-image: var(--gradient1);
+    color: black;
+    border-radius: 10px;
+    padding: 6px;
+    margin: 4px 10px;
+    box-shadow: var(--box-shadow);
+}
+
+a:hover {
+    color: var(--green);
+}
+
+.main{
+    display: flex;
+    height: auto;
+}
+
+.sidebar{
+    flex: 2 1 0;
+    height: auto;
+    background-image: var(--gradient);
+    box-shadow: 4px 0px 5px var(--green), -4px 0px 5px var(--green);
+    z-index: 0;
+}
+
+.color{
+    width: 2px;
+    height: 2px;
+}
+
+.formdiv{
+    display: flex;
+    flex: 10 1 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.fm{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    height: fit-content;
+    row-gap: 20px;
+    padding: 40px;
+    border-radius: 20px;
+    background-image: var(--gradient);
+    box-shadow: -4px 4px 5px var(--green), 4px -4px 5px var(--green);
+    text-shadow: var(--text-shadow);
+}
+
+legend{
+    color: var(--green);
+    box-shadow: var(--box-shadow);
+    align-content: space-around;
+    
+}
+
+input{
+    width: 300px;
+    
+    /* animation: inputanimation 3s 1 alternate backwards; */
+}
+
+@keyframes inputanimation {
+    from{
+        transform: scale(0.5);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+label, input{
+    margin-right: 4px;
+    padding: 10px;
+    color: var(--green);
+    text-align: left;
+    box-shadow: var(--box-shadow);
+}
+
+.btn{
+    display: flex;
+    column-gap: 100px;
+    padding: 0px 20px;
+    margin: 0px 20px;;
+    justify-content: center;
+}
+
+.btn button, span{
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    border: transparent;
+    color: var(--green);
+    box-shadow: var(--box-shadow);
+    text-shadow:var(--box-shadow);
+}

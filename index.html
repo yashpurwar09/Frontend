@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Login Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./login.css">
+    </head>
+
+    <body>
+        <!------------HEADER---------------->
+
+        <header>
+            <nav>
+                <a href="">Home</a>
+                <a href="">About me</a>
+                <a href="">Contacts</a>
+                <a href="">Details</a>
+            </nav>
+        </header>
+
+        <!------------------Main--------------->
+
+        <div class="main">
+            <div class="sidebar">
+                <h4>Choose Color</h3> 
+                <ol>  
+                    <li><input class="color" id="shadow-color"      type="color">Shadow Color      </input></li>
+                    <li><input class="color" id="gradient-color-1"  type="color">Gradient Color 1  </input></li>
+                    <li><input class="color" id="gradient-color-2"  type="color">Gradient Color 2  </input></li>
+                    <li><input class="color" id="text-shadow"       type="color">Text Shadow       </input></li>
+                </ol>
+            </div>
+            <div class="formdiv">
+                <form class="fm">
+                    <legend class="Font">Login Form</legend>
+                    <div>
+                        <label class="Font" for="Username">Username</label>
+                        <input type="text" class="Font" id="Username" style="text-align: start;" autofocus>
+                    </div>
+                    <div>
+                        <label class="Font" for="Password">Password</label>
+                        <input type="text" class="Font" id="Password" style="text-align: start;">
+                    </div>
+                    <div class="btn">
+                        <button class="Font" type="Submit">Log In</button>
+                        <span class="Font" style="align-content: center;">Sign Up</span>
+                    </div>
+                </form>
+            </div>
+            <div class="sidebar">
+
+            </div>
+        </div>
+
+        <!--------------------Footer---------------->
+
+        <footer>
+            <p>@copyright 2024</p>
+        </footer>
+
+        <script src="./login.js" async defer></script>
+    </body>
+
+</html>
